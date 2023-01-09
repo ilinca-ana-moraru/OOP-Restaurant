@@ -1,6 +1,11 @@
-#include <iostream>
+#include "user_interface.h"
+#include "id_generator.h"
 
+
+UserInterface* UserInterface:: interface_ptr;
+int IdGenerator::id_counter = 0;
 int main() {
-    std::cout << "Hello, world!\n";
+
+    UserInterface::UIStarting();
     return 0;
 }
